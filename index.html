@@ -3,29 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/weather.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="images/reshot-icon-weather-8CKJB9YN7X.svg"
+      type="image/x-icon"
+    />
     <title>Weather Forecast</title>
     <link rel="stylesheet" href="styles/all.min.css" />
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@400..700&family=Chilanka&family=Edu+SA+Beginner:wght@400..700&family=Gaegu:wght@300;400;700&family=Handlee&family=Patrick+Hand&family=Permanent+Marker&family=Schoolbell&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Chilanka&family=Concert+One&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Edu+SA+Beginner:wght@400..700&family=Gaegu:wght@300;400;700&family=Handlee&family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Permanent+Marker&family=Righteous&family=Schoolbell&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="images/weather-logo.svg"
-            alt="Weather Forecast Logo"
-            class="logo-img"
-          />
-        </a>
+        <div class="d-flex">
+          <div>
+            <a class="navbar-brand" href="#">
+              <img
+                src="images/logo@2x.png"
+                alt="Weather Forecast Logo"
+                class="logo-img"
+              />
+            </a>
+          </div>
+          <div class="slogan d-flex flex-column justify-content-center">
+            <span>Weather</span>
+            <span>Be Prepared, Always!</span>
+          </div>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,7 +48,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <form class="d-flex mt-lg-0" role="search">
+            <form class="d-flex mt-lg-0 mt-3" role="search">
               <input
                 id="searchInput"
                 class="form-control me-2"
