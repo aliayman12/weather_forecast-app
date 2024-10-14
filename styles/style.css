@@ -1,0 +1,168 @@
+html,body {
+  font-family: "Archivo Black", sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar-toggler {
+  border-color: #28a745;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="rgba(40,167,69,0.8)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#searchInput {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  color: #333;
+}
+
+#searchInput:focus {
+  outline: none;
+  box-shadow: none; 
+  border-color: #28a745; 
+}
+
+.btn-outline-success {
+  color: #28a745;
+  border-radius: 20px;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.navbar-brand img.logo-img {
+  width: 85px;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img.logo-img {
+    width: 75px;
+  }
+}
+
+/* Header Section */
+
+header {
+  background: linear-gradient(to right, #28a745, #a8e063);
+  color: white;
+  flex: 1;
+}
+
+header .card {
+  background-color: #f0eded;
+  border: none;
+  border-radius: 10px;
+}
+
+header .card-header {
+  background-color: #28a745;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+header .card-body {
+  color: #333;
+}
+
+#cityName,
+#countryName {
+  color: #28a745;
+}
+
+header .fa-umbrella,
+header .fa-wind,
+header .fa-compass {
+  color: #28a745;
+}
+
+
+/* footer section */
+
+footer {
+  background-color: #333;
+  margin-top: auto;
+  width: 100%;
+
+}
+
+footer h5 {
+  color: #28a745;
+}
+
+footer p, footer a {
+  color: #bbb;
+  margin: 0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #28a745;
+  text-decoration: underline;
+}
+
+footer .list-unstyled li {
+  margin: 10px 0;
+}
+
+footer input.form-control {
+  background-color: #444;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+footer input.form-control:focus{
+  box-shadow: none;
+}
+
+footer input.form-control::placeholder {
+  color: #bbb;
+}
+
+footer button.btn-success {
+  border-radius: 20px;
+  background-color: #28a745;
+  border: none;
+}
+
+footer button.btn-success:hover{
+  background-color: #48c465;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .social-links a {
+  color: #bbb;
+  font-size: 1.5rem;
+}
+
+footer .social-links a:hover {
+  color: #28a745;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer .row {
+    text-align: center;
+  }
+
+  footer .social-links {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
