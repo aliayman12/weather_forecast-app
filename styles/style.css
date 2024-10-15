@@ -6,17 +6,14 @@ html,body {
   height: 100%;
 }
 
+
+:root {
+  --mainColor: #0FB4DD;
+}
+
 .navbar{
   background-color: #f0eded;
   padding: 10px 0px;
-}
-
-.navbar-toggler {
-  border-color: #28a745;
-}
-
-.navbar-toggler-icon {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="rgba(40,167,69,0.8)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
 }
 
 .navbar-toggler:focus {
@@ -33,17 +30,7 @@ html,body {
 #searchInput:focus {
   outline: none;
   box-shadow: none; 
-  border-color: #28a745; 
-}
-
-.btn-outline-success {
-  color: #28a745;
-  border-radius: 20px;
-}
-
-.btn-outline-success:hover {
-  background-color: #28a745;
-  color: #fff;
+  border-color: var(--mainColor);
 }
 
 .navbar-brand img.logo-img {
@@ -63,7 +50,7 @@ html,body {
 /* Header Section */
 
 header {
-  background: linear-gradient(to right, #28a745, #a8e063);
+  background: linear-gradient(to right, #3fbfcf, #0a6f97);
   color: white;
   flex: 1;
 }
@@ -75,7 +62,7 @@ header .card {
 }
 
 header .card-header {
-  background-color: #28a745;
+  background-color: var(--mainColor);
   color: white;
   border-radius: 10px 10px 0 0;
 }
@@ -86,13 +73,13 @@ header .card-body {
 
 #cityName,
 #countryName {
-  color: #28a745;
+  color: var(--mainColor);
 }
 
 header .fa-umbrella,
 header .fa-wind,
 header .fa-compass {
-  color: #28a745;
+  color: var(--mainColor);
 }
 
 
@@ -106,7 +93,7 @@ footer {
 }
 
 footer h5 {
-  color: #28a745;
+  color: var(--mainColor);
 }
 
 footer p, footer a {
@@ -116,7 +103,7 @@ footer p, footer a {
 }
 
 footer a:hover {
-  color: #28a745;
+  color: var(--mainColor);
   text-decoration: underline;
 }
 
@@ -139,14 +126,14 @@ footer input.form-control::placeholder {
   color: #bbb;
 }
 
-footer button.btn-success {
+footer button.btn-info {
   border-radius: 20px;
-  background-color: #28a745;
+  background-color: var(--mainColor);
   border: none;
 }
 
-footer button.btn-success:hover{
-  background-color: #48c465;
+footer button.btn-info:hover{
+background-color: #82dbf7;
 }
 
 footer .social-links {
@@ -161,7 +148,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: #28a745;
+  color: var(--mainColor);
 }
 
 /* Responsive Styles */
@@ -174,4 +161,22 @@ footer .social-links a:hover {
     justify-content: center;
     margin-top: 15px;
   }
+}
+
+@keyframes moveLeftToRight {
+  0% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
+}
+
+@keyframes moveRightToLeft {
+  0% { transform: translateX(10px); }
+  100% { transform: translateX(-10px); }
+}
+
+.image-container img:first-child {
+  animation: moveLeftToRight 5s ease-in-out infinite alternate;
+}
+
+.image-container img:last-child {
+  animation: moveRightToLeft 5s ease-in-out infinite alternate;
 }
