@@ -13,7 +13,6 @@ html,body {
 
 .navbar{
   background-color: #f0eded;
-  padding: 10px 0px;
 }
 
 .navbar-toggler:focus {
@@ -23,7 +22,8 @@ html,body {
 
 #searchInput {
   border-radius: 20px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem; 
+  padding-right: 10rem; 
   color: #333;
 }
 
@@ -31,6 +31,21 @@ html,body {
   outline: none;
   box-shadow: none; 
   border-color: var(--mainColor);
+}
+
+.btn-outline-info {
+  color: var(--mainColor);
+  border-radius: 20px;
+  padding: 0.2rem 2rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.btn-outline-info:hover {
+  background-color: var(--mainColor);
+  color: #fff;
 }
 
 .navbar-brand img.logo-img {
@@ -161,22 +176,4 @@ footer .social-links a:hover {
     justify-content: center;
     margin-top: 15px;
   }
-}
-
-@keyframes moveLeftToRight {
-  0% { transform: translateX(-10px); }
-  100% { transform: translateX(10px); }
-}
-
-@keyframes moveRightToLeft {
-  0% { transform: translateX(10px); }
-  100% { transform: translateX(-10px); }
-}
-
-.image-container img:first-child {
-  animation: moveLeftToRight 5s ease-in-out infinite alternate;
-}
-
-.image-container img:last-child {
-  animation: moveRightToLeft 5s ease-in-out infinite alternate;
 }

@@ -1,6 +1,6 @@
 var searchInput = document.getElementById("searchInput");
 
-
+var searchBtn = document.getElementById("searchBtn");
 
 let todayName = document.getElementById("todayName");
 let todayDateNum = document.getElementById("todayDateNum");
@@ -14,17 +14,11 @@ let humidity = document.getElementById("humidity");
 let wind = document.getElementById("wind");
 let windDirection = document.getElementById("windDirection");
 
-
-
-
 let nextDay = document.getElementsByClassName("nextDay");
 let nextDayCondImage = document.getElementsByClassName("nextDayCondImage");
 let maxTemp = document.getElementsByClassName("maxTemp");
 let minTemp = document.getElementsByClassName("minTemp");
 let NextDayCond = document.getElementsByClassName("NextDayCond");
-
-
-
 
 async function getWeatherData(cityName) {
   let weatherRes = await fetch(
@@ -33,10 +27,6 @@ async function getWeatherData(cityName) {
   let data = await weatherRes.json();
   return data;
 }
-
-
-
-
 
 function displayTodayData(data) {
   let date = new Date();
@@ -52,9 +42,6 @@ function displayTodayData(data) {
   wind.innerHTML = data.current.wind_kph + "km/h";
   windDirection.innerHTML = data.current.wind_dir;
 }
-
-
-
 
 function displayNextDays(data) {
   for (let index = 0; index < data.forecast.forecastday.length; index++) {
@@ -77,9 +64,6 @@ function displayNextDays(data) {
   }
 }
 
-
-
-
 async function startApp(city = "cairo") {
   let weatherData = await getWeatherData(city);
 
@@ -89,8 +73,6 @@ async function startApp(city = "cairo") {
 
 startApp();
 
-
-
-searchInput.addEventListener("keyup", function () {
+searchBtn.addEventListener("click", function () {
   startApp(searchInput.value);
 });
